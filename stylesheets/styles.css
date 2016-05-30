@@ -1,0 +1,49 @@
+body {
+
+  font-family: helvetica;
+  text-align: center;
+  color: white
+}
+
+.main {
+  background-color: grey;
+  height: 100vh;
+}
+
+.projects {
+  background-color: grey;
+  height: 100vh;
+}
+
+
+.contact {
+  background-color: darkgrey;
+  height: 100vh;
+}
+
+h1 {
+  padding-top: 10%;
+  font-weight: lighter;
+}
+
+
+svg {
+  height: 70%;
+  width: 70%;
+  position: relative;
+  z-index: 2;
+}
+
+polyline {
+  stroke: turquoise;
+  stroke-width: 9;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: dash 5s linear infinite;
+}
+
+@keyframes dash{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
